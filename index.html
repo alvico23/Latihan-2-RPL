@@ -1,1 +1,55 @@
-tsese
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        .container {
+            width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="you name here">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="your email here">
+
+        <label for="address">Address:</label>
+        <select id="address">
+            <option value="25 Nowhere Street">25 Nowhere Street</option>
+            <option value="Somewhere">Somewhere</option>
+            <option value="Not Here">Not Here</option>
+            <option value="Y2K 5RU">Y2K 5RU</option>
+        </select>
+
+        <label for="postcode">Postcode:</label>
+        <input type="text" id="postcode" placeholder="postal code">
+    </div>
+</body>
+</html>
